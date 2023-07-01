@@ -40,7 +40,7 @@ body{
 }
 
 .title{
-  margin-top: 40%;
+  margin-top: 20%;
   color: #7E7C89;
 }
 
@@ -58,7 +58,12 @@ body{
 
 .logo{
   width: 15px;
-  height: 15px;
+  height: 18px;
+}
+
+.logo:hover{
+  width: 18px;
+  height: 20px;
 }
 
 .counter{
@@ -119,6 +124,8 @@ input[type="checkbox"]:checked {
   color: #19171F;
   background-color: #A4FFAF;
   font-weight: 500;
+  user-select: none;
+  cursor: pointer;
 }
 
 .my-2{

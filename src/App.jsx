@@ -7,8 +7,7 @@ function App() {
 
   return (
     <div className='flex'>
-      <div className='w-30 mx-auto'>
-     <PBox />
+      <div className='w-30 flex'>
      <PasswordGenerator />
      </div>
     </div>
