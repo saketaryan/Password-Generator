@@ -1,69 +1,147 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Space+Mono:wght@400;700&display=swap');
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+body{
+  background-color: black;
+  color: white;
+  font-family: 'Space Mono', monospace;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+.w-30{
+  width: 30%;
 }
 
-body {
-  margin: 0;
+.w-80{
+  width: 80%;
+}
+
+.w-100{
+  width: 100%;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.flex{
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  justify-content: center;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.justify-between{
+  justify-content: space-between;
 }
 
-button {
+.mx-auto{
+  margin: 0 auto;
+}
+
+.my-auto{
+  margin: auto 0;
+}
+
+.title{
+  margin-top: 40%;
+  color: #7E7C89;
+}
+
+.box{
+  background-color: #24232B;
+  color: white;
+  padding: 1rem;
+  margin: 2rem auto;
+  min-height: 2rem;
+}
+
+.password{
+  color: #53525A;
+}
+
+.logo{
+  width: 15px;
+  height: 15px;
+}
+
+.counter{
+  color: #A4FFAF;
+}
+
+.slider{
+  -webkit-appearance: none;   
+  background: #19171F;
+  height: 4px;
   border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  --track-color: rgba(235, 16, 16, 0.9);
+  color: #ef233c;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; 
+  appearance: none;
+  width: 15px;
+  height: 15px; 
+  background: #ffffff; 
+  cursor: pointer; 
+  border-radius: 100%;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: rgba(0, 0, 0, 0);
+  font: inherit;
+  width: 1.15em;
+  height: 1.15em;
+  border:  solid white;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #A4FFAF;
+}
+
+.strength{
+  font-family: 'Roboto', sans-serif;
+  color: #53525A;
+}
+
+.box-st{
+  background-color: rgba(red, green, blue, 0);
+  width: 0.3rem;
+  height: 1rem;
+  margin: auto 2px;
+  border: #ffffff solid;
+}
+
+.selected{
+  background-color: #A4FFAF;
+}
+
+.generate{
+  color: #19171F;
+  background-color: #A4FFAF;
+  font-weight: 500;
+}
+
+.my-2{
+  margin: 4px auto;
+}
+
+.my-10{
+  margin: 20px auto;
+}
+
+.my-1{
+  margin: 2px auto;
+}
+
+.ml-2{
+  margin: auto auto auto 1rem;
+}
+
+.bg-dark{
+  background-color: #19171F;
+}
+
+.relative{
+  position: relative;
+  left: 10px;
 }
