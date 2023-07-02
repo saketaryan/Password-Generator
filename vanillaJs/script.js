@@ -56,6 +56,7 @@ const calculateStrength = () => {
 
     strength *= length;
     strength = Math.floor(strength / 235);
+    if(strength>4) strength=4;
 
     document.getElementById('st1').classList.remove('selected');
     document.getElementById('st2').classList.remove('selected');
