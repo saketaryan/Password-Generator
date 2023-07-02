@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="./styles.css"/>
+</head>
+<body>
+
+    <div class='flex'>
+        <div class='w-30 flex'>
+            <div>
+                <!-- PBox -->
+                <div>
+                    <h4 class='title text-center'>Password Generator</h4>
+                    <div class='box flex justify-between'>
+                        <h3 class='my-auto password' id="password">Passw!rd</h3>
+                         <img onclick="copyPassword()" src='./assets/copy.png' alt='copy' class='logo my-auto'/>
+                    </div>
+                </div>
+
+                <!-- Password Generator -->
+                <div class='box'>
+                <div class='flex justify-between my-2'>
+                    <h5 class='my-auto'>Character Length</h5>
+                    <h3 class='my-auto counter' id="passwordLength">10</h3>
+                </div>
+                 <div class='flex my-10'>
+                    <input onchange="updateLength()" value='10' class='w-100 slider mx-auto' type='range' min='4' max='16' id='slider' />
+                 </div>
+            
+                <div class='my-2'>
+                    <div class='my-1 flex'>
+                        <input type='checkbox' id='uppercase' />
+                        <h4 class='ml-2' htmlFor='uppercase'>Include Uppercase Letters</h4>
+                    </div>
+                    <div class='my-1 flex'>
+                        <input type='checkbox' id='lowercase' />
+                        <h4 class='ml-2' htmlFor='lowercase'>Include Lowercase Letters</h4>
+                        </div>
+                    <div class='my-1 flex'>
+                        <input type='checkbox' id='numbers' />
+                        <h4 class='ml-2' htmlFor='numbers'>Include Numbers</h4>
+                    </div>
+                    <div class='my-1 flex'>
+                        <input type='checkbox' id='symbols' />
+                        <h4 class='ml-2' htmlFor='symbols'>Include Symbols</h4>
+                    </div>
+                </div>
+            
+                <!-- Strength -->
+                <div class='flex strength'>
+                    <div class='w-100'>
+                    <div class='flex justify-between box bg-dark'>
+                        <h4 class='my-auto strength'>STRENGTH</h4>
+                        <div class='flex justify-between'>
+                            <div class="box-st" id="st1"></div>
+                            <div class="box-st" id="st2"></div>
+                            <div class="box-st" id="st3"></div>
+                            <div class="box-st" id="st4"></div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            
+                <div onclick="generatePassword()" class='mx-auto box generate'>
+                    <div class='flex justify-center'>
+                        <div class='my-auto'>GENERATE</div>
+                        <img src="./assets/arrow.png" alt='arrow' class='relative my-auto'/>
+                    </div>
+                </div>
+            
+                </div>
+                </div>
+
+
+       </div>
+      </div>
+    
+      <script src="./script.js"></script>
+</body>
+</html>
